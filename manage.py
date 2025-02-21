@@ -30,3 +30,4 @@ if __name__ == "__main__":
     app = get_app(service)
     migrate.init_app(app, db)
     app.run(host="0.0.0.0", port=int(os.getenv(f"{service.upper()}_PORT", 5000)), debug=True)
+
