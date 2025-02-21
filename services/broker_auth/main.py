@@ -21,9 +21,9 @@ def main():
     fyers = fyersModel.FyersModel(client_id=client_id, token=access_token, log_path="")
 
     # Fetch and print user profile
-    # profile = get_profile(fyers)
-    # print("\n📝 Fyers Profile Data:")
-    # print(profile)
+    profile = get_profile(fyers)
+    print("\n📝 Fyers Profile Data:")
+    print(profile)
 
     # print("Authenticating Binance...")
     # binance_auth = BinanceAuth()
